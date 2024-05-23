@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {% block head %}
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+    integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
+  <link rel="stylesheet" href="/static/css/header.css">
+  <link rel="icon" sizes="48x48" type="image/png" href="/static/imgs/main.png">
+  {% endblock %}
+</head>
+
+<body>
+  <div class="header pure-g">
+    <div class="pure-u-1-3">
+      <div class="pure-menu pure-menu-horizontal">
+        <a href="/" class="pure-menu-heading site-logo">MAPOST</a>
+      </div>
+    </div>
+
+    <div class="pure-u-1-3 header-center">
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+          <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+          <li class="pure-menu-item"><a href="/mapping" class="pure-menu-link">Map</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pure-u-1-3 header-right">
+      <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+          {% if session.user %}
+          <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+            <a href="/user/{{ session.user_id.id }}" class="login-button pure-menu-link pure-button">{{
+              session.user.userinfo.nickname }}</a>
+            <ul class="pure-menu-children user-children">
+              <li class="pure-menu-item">
+                <a href="/create" class="pure-menu-link">Create</a>
+              </li>
+              <li class="pure-menu-item">
+                <a href="/logout" class="pure-menu-link">Log Out</a>
+              </li>
+            </ul>
+          </li> 
+          {% else %}
+          <li class="pure-menu-item">
+            <a href="/login" class="login-button pure-menu-link pure-button">Login</a>
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    {% block content %}{% endblock %}
+  </div>
+
+  <footer class="template-footer">
+    <div>© 2024 Team-delulu</div>
+  </footer>
+</body>
+
+</html>

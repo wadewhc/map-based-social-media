@@ -1,0 +1,108 @@
+:root {
+    --main-green: #00853e;
+    --hover-green: #024622;
+    --text-gray: #333333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--text-gray);
+    background-color: var(--hover-green);
+    position: fixed;
+    width: 100%;
+    height: 43px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .05);
+}
+
+.header-center,
+.search-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-right {
+    text-align: right;
+}
+
+.pure-menu-link,
+.login-button,
+.site-logo,
+.template-footer {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.pure-menu-item {
+    display: inline;
+    margin: 0 5px;
+}
+
+.site-logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.site-logo:hover {
+    transform: scale(1.05);
+}
+
+.login-button {
+    background: var(--main-green);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-menu-children {
+    background-color: var(--main-green);
+    border-radius: 4px;
+}
+
+.pure-menu-children .pure-menu-link {
+    background-color: var(--main-green);
+    border-radius: 4px;
+}
+
+.pure-menu-link:hover,
+.pure-menu-link:focus,
+.login-button:hover {
+    background-color: var(--hover-green);
+    color: #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    flex: 1;
+    padding-top: 43px;
+    background-color: transparent;
+}
+
+.template-footer {
+    background-color: var(--hover-green);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.pure-menu-children.user-children {
+    width: 100%;
+    text-align: center;
+}

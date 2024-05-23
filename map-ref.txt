@@ -1,0 +1,26 @@
+<!-- https://docs.mapbox.com/mapbox-gl-js/example/offset-vanishing-point-with-padding/ -->
+<!-- https://docs.mapbox.com/mapbox-gl-js/example/popup-on-click/ -->
+<!-- All types of MapBox icons: -->
+<!-- https://labs.mapbox.com/maki-icons/ -->
+<!-- MapBox icon size and image change -->
+<!-- https://docs.mapbox.com/mapbox-gl-js/example/add-image/ -->
+<!-- MapBox change basemap style -->
+<!-- https://docs.mapbox.com/mapbox-gl-js/example/setstyle/ -->
+<!-- MapBox Locator Reference -->
+<!-- https://docs.mapbox.com/help/tutorials/building-a-store-locator/ -->
+
+THis is how to generate static map image 
+https://docs.mapbox.com/api/maps/static-images/
+
+
+This is how to embed a html to another html:
+https://docs.mapbox.com/help/glossary/iframe/
+
+Mapbox: How to get lat/lng value into input field and place a marker by mouse clicking on the map?
+https://stackoverflow.com/questions/64176190/mapbox-how-to-get-lat-lng-value-into-input-field-and-place-a-marker-by-mouse-cl
+
+Display Lat Lng Coordinates on click on Mapbox GL JS
+https://stackoverflow.com/questions/63158744/display-lat-lng-coordinates-on-click-on-mapbox-gl-js
+
+Get coordinates of the mouse pointer
+https://docs.mapbox.com/mapbox-gl-js/example/mouse-position/

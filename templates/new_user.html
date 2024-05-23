@@ -1,0 +1,23 @@
+{% extends "header_template.html" %}
+{% block head %}
+  {{ super() }}
+  <title>MAPOST | Welcome</title>
+  <link rel="stylesheet" href="/static/css/new_user.css">
+{% endblock %}
+
+{% block content %}
+<div class="pure-g">
+  <div class="pure-u-1-8 pure-u-md-1-3"></div>
+  <div class="pure-u-3-4 pure-u-md-1-3 info">
+    <h1>Welcome to MAPOST</h1>
+    <h2>Tips for Getting Started:</h2>
+    <ul>
+      <li>Home brings you to a posts feed where you can search for posts</li>
+      <li>Map brings you to the map view where you can see points for each post</li>
+      <li>Click on your username to go to your own page where you can see, edit, and delete your posts</li>
+      <li>Hover over your username and click Create to make your very first post</li>
+    </ul>
+    <h2>Happy maposting!</h2>
+  </div>
+</div>
+{% endblock %}
